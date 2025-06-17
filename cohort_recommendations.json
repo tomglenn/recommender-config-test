@@ -39,7 +39,7 @@
     },
     "/foo": {
       "type": "docs-page",
-      "title": "THis is a test",
+      "title": "THis is a test2222",
       "url": "https://www.grafana.com"
     }
   }
