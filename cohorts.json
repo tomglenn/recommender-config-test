@@ -1,5 +1,6 @@
 {
     "1": "linux",
     "2": "windows",
-    "3": "macos"
+    "3": "macos",
+    "99": "special"
 }
