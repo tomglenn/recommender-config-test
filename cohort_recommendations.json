@@ -1,0 +1,36 @@
+{
+  "cohorts": {
+    "_default": {
+      "recommendations": [
+        "/docs/grafana-cloud/get-started/"
+      ]
+    },
+    "linux": {
+      "recommendations": [
+        "/docs/learning-journeys/linux-server-integration/"
+      ]
+    },
+    "macos": {
+      "recommendations": [
+        "/docs/learning-journeys/macos-integration/"
+      ]
+    }
+  },
+  "recommendations": {
+    "/docs/grafana-cloud/get-started/": {
+      "type": "docs-page",
+      "title": "Get started with Grafana Cloud",
+      "url": "https://grafana.com/docs/grafana-cloud/get-started/"
+    },
+    "/docs/learning-journeys/linux-server-integration/": {
+      "type": "learning-journey",
+      "title": "Monitor a Linux server in Grafana Cloud",
+      "url": "https://grafana.com/docs/learning-journeys/linux-server-integration/"
+    },
+    "/docs/learning-journeys/macos-integration/": {
+      "type": "learning-journey",
+      "title": "Monitor a macOS server in Grafana Cloud",
+      "url": "https://grafana.com/docs/learning-journeys/macos-integration/"
+    }
+  }
+} 

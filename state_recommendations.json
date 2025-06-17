@@ -1,0 +1,177 @@
+{
+  "rules": [
+    {
+      "title": "Connect to a Prometheus data source in Grafana Cloud",
+      "url": "https://grafana.com/docs/learning-journeys/prometheus/",
+      "type": "learning-journey",
+      "match": {
+        "or": [
+          { "noDatasources": true },
+          { "urlPrefix": "/connections/datasources" }
+        ]
+      }
+    },
+    {
+      "title": "Send metrics to Grafana Cloud using Prometheus remote write",
+      "url": "https://grafana.com/docs/learning-journeys/prom-remote-write/",
+      "type": "learning-journey",
+      "match": {
+        "and": [
+          { "urlPrefix": "/connections/datasources" },
+          { "datasource": "prometheus" }
+        ]
+      }
+    },
+    {
+      "title": "Visualize CSV data using the Infinity data source",
+      "url": "https://grafana.com/docs/learning-journeys/infinity-csv/",
+      "type": "learning-journey",
+      "match": {
+        "and": [
+          { "urlPrefixIn": ["/dashboard", "/d/"] },
+          { "datasource": "infinity" }
+        ]
+      }
+    },
+    {
+      "title": "Visualize JSON data using the Infinity data source",
+      "url": "https://grafana.com/docs/learning-journeys/infinity-json/",
+      "type": "learning-journey",
+      "match": {
+        "and": [
+          { "urlPrefixIn": ["/dashboard", "/d/"] },
+          { "datasource": "infinity" }
+        ]
+      }
+    },
+    {
+      "title": "Monitor a Linux server in Grafana Cloud",
+      "url": "https://grafana.com/docs/learning-journeys/linux-server-integration/",
+      "type": "learning-journey",
+      "match": {
+        "or": [
+          { "urlPrefixIn": ["/connections", "/dashboard", "/d/"] },
+          { "noDatasources": true }
+        ]
+      }
+    },
+    {
+      "title": "Create a private connection to a data source",
+      "url": "https://grafana.com/docs/learning-journeys/private-data-source-connect/",
+      "type": "learning-journey",
+      "match": {
+        "urlPrefix": "/connections/datasources"
+      }
+    },
+    {
+      "title": "Send logs to Grafana Cloud using Alloy",
+      "url": "https://grafana.com/docs/learning-journeys/send-logs-alloy-loki/",
+      "type": "learning-journey",
+      "match": {
+        "and": [
+          { "urlPrefix": "/connections" },
+          { "allDatasources": ["loki", "alloy"] }
+        ]
+      }
+    },
+    {
+      "title": "Monitor Kubernetes cluster infrastructure in Grafana Cloud",
+      "url": "https://grafana.com/docs/learning-journeys/kubernetes/",
+      "type": "learning-journey",
+      "match": {
+        "and": [
+          { "urlPrefixIn": ["/connections", "/dashboard", "/d/"] },
+          { "allDatasources": ["kubernetes", "prometheus"] }
+        ]
+      }
+    },
+    {
+      "title": "Explore data using Metrics Drilldown",
+      "url": "https://grafana.com/docs/learning-journeys/drilldown-metrics/",
+      "type": "learning-journey",
+      "match": {
+        "or": [
+          { "urlPrefixIn": ["/dashboard", "/grafana-metricsdrilldown-app"] },
+          { "datasourceIn": ["prometheus", "graphite"] }
+        ]
+      }
+    },
+    {
+      "title": "Explore logs using Logs Drilldown",
+      "url": "https://grafana.com/docs/learning-journeys/drilldown-logs/",
+      "type": "learning-journey",
+      "match": {
+        "and": [
+          { "urlPrefix": "/dashboard" },
+          { "datasourceIn": ["loki", "elasticsearch"] }
+        ]
+      }
+    },
+    {
+      "title": "Visualize metrics in a Grafana Cloud dashboard",
+      "url": "https://grafana.com/docs/learning-journeys/visualization-metrics/",
+      "type": "learning-journey",
+      "match": {
+        "and": [
+          { "urlPrefixIn": ["/dashboard", "/d/"] },
+          { "datasourceIn": ["prometheus", "graphite"] }
+        ]
+      }
+    },
+    {
+      "title": "Use Traces Drilldown to identify high latency service requests",
+      "url": "https://grafana.com/docs/learning-journeys/drilldown-traces/",
+      "type": "learning-journey",
+      "match": {
+        "and": [
+          { "urlPrefixIn": ["/dashboard", "/grafana-tracesdrilldown-app"] },  
+          { "datasourceIn": ["tempo", "jaeger", "zipkin"] }
+        ]
+      }
+    },
+    {
+      "title": "Visualize logs in a Grafana Cloud dashboard",
+      "url": "https://grafana.com/docs/learning-journeys/visualization-logs/",
+      "type": "learning-journey",
+      "match": {
+        "and": [
+          { "urlPrefixIn": ["/dashboard", "/d/"] },
+          { "datasourceIn": ["loki", "elasticsearch"] }
+        ]
+      }
+    },
+    {
+      "title": "Kubernetes Monitoring Helm Chart Configuration",
+      "url": "https://grafana.com/docs/grafana-cloud/monitor-infrastructure/kubernetes-monitoring/configuration/helm-chart-config/",
+      "type": "docs-page",
+      "match": {
+        "and": [
+          { "urlPrefix": "/connections" },
+          { "allDatasources": ["kubernetes", "prometheus"] }
+        ]
+      }
+    },
+    {
+      "title": "Customize Kubernetes Monitoring Helm Chart",
+      "url": "https://grafana.com/docs/grafana-cloud/monitor-infrastructure/kubernetes-monitoring/configuration/helm-chart-config/customize-helm-chart/",
+      "type": "docs-page",
+      "match": {
+        "and": [
+          { "urlPrefix": "/connections" },
+          { "allDatasources": ["kubernetes", "prometheus"] }
+        ]
+      }
+    },
+    {
+      "title": "Configure Prometheus Data Source",
+      "url": "https://grafana.com/docs/grafana-cloud/connect-externally-hosted/data-sources/prometheus/configure/",
+      "type": "docs-page",
+      "match": {
+        "and": [
+          { "urlPrefix": "/connections/datasources" },
+          { "datasource": "prometheus" }
+        ]
+      }
+    }
+  ]
+}
