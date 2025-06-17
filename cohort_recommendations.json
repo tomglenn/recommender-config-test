@@ -14,6 +14,11 @@
       "recommendations": [
         "/docs/learning-journeys/macos-integration/"
       ]
+    },
+    "special": {
+      "recommendations": [
+        "/foo"
+      ]
     }
   },
   "recommendations": {
@@ -31,6 +36,11 @@
       "type": "learning-journey",
       "title": "Monitor a macOS server in Grafana Cloud",
       "url": "https://grafana.com/docs/learning-journeys/macos-integration/"
+    },
+    "/foo": {
+      "type": "docs-page",
+      "title": "THis is a test",
+      "url": "https://www.grafana.com"
     }
   }
 } 
